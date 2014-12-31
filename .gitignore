@@ -2,3 +2,7 @@
 .git
 .o
 .so
+.dylib
+CMakefiles
+Makefile
+.cmake
