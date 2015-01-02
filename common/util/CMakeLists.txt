@@ -23,7 +23,6 @@ $ENV{TT_ROOT}/common/util
 $ENV{TT_ROOT}/common/include
 /usr/include
 /usr/local/include
-<<<<<<< HEAD
 /usr/local/opt/log4cplus/include
 )
 
@@ -36,13 +35,6 @@ ExceptionHandler.cpp
 stdafx.cpp
 StringHelpers.cpp
 StringUtils.cpp
-=======
-)
-
-add_library(ttutil SHARED 
-testcpp.cpp
-stdafx.cpp
->>>>>>> 0a63f179a8a52f89523fec664e0019c6d8bd1f81
 )
 
 
