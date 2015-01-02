@@ -1,7 +1,7 @@
 //__________________________________________________________________________________________________
 //  Mention CONFIDENTIAL: Copyright (C) 2008 Mention Inc. All Rights Reserved.
 //  
-//  FILENAME.h
+//  endian.h
 //  
 //  Description: For determaning which byte order we are using
 //  
