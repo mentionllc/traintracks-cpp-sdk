@@ -97,7 +97,7 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>$(HOME)$(TRAINTRACKS)/traintracks-sdk;$(HOME)$(CASABLANCA)/Release\include;E:\Traintracks\sdk\traintracks-sdk\traintracks-sdk;E:\Traintracks\sdk\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(HOME)$(TRAINTRACKS)/traintracks-sdk;$(HOME)$(CASABLANCA)/Release\include;$(HOME)$(TRAINTRACKS)/traintracks-sdk;$(HOME)$(CASABLANCA)/Release\include;E:\Traintracks\sdk\traintracks-sdk\traintracks-sdk;E:\Traintracks\sdk\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -114,7 +114,7 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>$(HOME)$(TRAINTRACKS)/traintracks-sdk;$(HOME)$(CASABLANCA)/Release\include;E:\Traintracks\sdk\traintracks-sdk\traintracks-sdk;E:\Traintracks\sdk\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(HOME)$(TRAINTRACKS)/traintracks-sdk;$(HOME)$(CASABLANCA)/Release\include;$(HOME)$(TRAINTRACKS)/traintracks-sdk;$(HOME)$(CASABLANCA)/Release\include;E:\Traintracks\sdk\traintracks-sdk\traintracks-sdk;E:\Traintracks\sdk\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -133,7 +133,7 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>$(HOME)$(TRAINTRACKS)/traintracks-sdk;$(HOME)$(CASABLANCA)/Release\include;;E:\casablanca\casablanca\Release\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(HOME)$(TRAINTRACKS)/traintracks-sdk;$(HOME)$(CASABLANCA)/Release\include;$(HOME)$(TRAINTRACKS)/traintracks-sdk;$(HOME)$(CASABLANCA)/Release\include;;E:\casablanca\casablanca\Release\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -154,7 +154,7 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>$(HOME)$(TRAINTRACKS)/traintracks-sdk;$(HOME)$(CASABLANCA)/Release\include;E:\Traintracks\sdk\traintracks-sdk\traintracks-sdk;E:\Traintracks\sdk\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(HOME)$(TRAINTRACKS)/traintracks-sdk;$(HOME)$(CASABLANCA)/Release\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
