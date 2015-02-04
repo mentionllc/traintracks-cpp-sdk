@@ -1,0 +1,1 @@
+/home/jeff/AndroidstudioProjects/hello-jni1/app/build/intermediates/classes/debug
