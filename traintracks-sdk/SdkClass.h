@@ -86,13 +86,13 @@ public:
 	static void SetBlockSize(int count) { SdkClass::BlockSize = count; }
 
 	//Called to send n event to Traintracks
-	int PostEvent(const string_t& cEventName, const string_t& cClientTimestamp, const string_t& cDataField);
+	static int PostEvent(const string_t& cEventName, const string_t& cClientTimestamp, const string_t& cDataField);
 	// Called to shutdown the EEvent submission process
-	int EndPost();
+	static int EndPost();
 
 protected:
-	// Mthod that performs the actual sending of batched events to Traintracks
-	int SendBlock();
+	// Method that performs the actual sending of batched events to Traintracks
+	static int SendBlock();
 
 
 protected:

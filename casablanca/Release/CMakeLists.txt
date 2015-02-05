@@ -75,14 +75,35 @@ elseif(ANDROID)
 elseif(UNIX) # This includes OSX
   find_package(Boost REQUIRED COMPONENTS random chrono system thread locale regex filesystem)
   find_package(Threads REQUIRED)
-  if(APPLE AND NOT OPENSSL_ROOT_DIR)
-    # Prefer a homebrew version of OpenSSL over the one in /usr/lib
-    file(GLOB OPENSSL_ROOT_DIR /usr/local/Cellar/openssl/*)
-    # Prefer the latest (make the latest one first)
-    list(REVERSE OPENSSL_ROOT_DIR)
+
+  if(APPLE)
+    #if(APPLE AND NOT OPENSSL_ROOT_DIR)
+      # Prefer a homebrew version of OpenSSL over the one in /usr/lib
+      file(GLOB OPENSSL_ROOT_DIR /usr/local/Cellar/openssl/*)
+      # Prefer the latest (make the latest one first)
+      list(REVERSE OPENSSL_ROOT_DIR)
+    #endif()
+    # This should prevent linking against the system provided 0.9.8y
+    #set(OPENSSL_ROOT_DIR /usr/local/Cellar/openssl)
+    set(_OPENSSL_VERSION "1.0.2")
+    # find_package(OpenSSL 1.0.0 REQUIRED)
+    set(OPENSSL_FOUND 1)
+    set(OPENSSL_SOURCE_DIR /usr/local/Cellar/openssl/1.0.2)
+    set(OPENSSL_INCLUDE_DIR "${OPENSSL_SOURCE_DIR}/include")
+    set(OPENSSL_LIBRARIES
+      "${OPENSSL_SOURCE_DIR}/lib/libcrypto.a"
+      "${OPENSSL_SOURCE_DIR}/lib/libssl.a"
+      )
+  else()
+    if(APPLE AND NOT OPENSSL_ROOT_DIR)
+      # Prefer a homebrew version of OpenSSL over the one in /usr/lib
+      file(GLOB OPENSSL_ROOT_DIR /usr/local/Cellar/openssl/*)
+      # Prefer the latest (make the latest one first)
+      list(REVERSE OPENSSL_ROOT_DIR)
+    endif()
+    # This should prevent linking against the system provided 0.9.8y
+    find_package(OpenSSL 1.0.0 REQUIRED)
   endif()
-  # This should prevent linking against the system provided 0.9.8y
-  find_package(OpenSSL 1.0.0 REQUIRED)
 
   option(BUILD_SHARED_LIBS "Build shared Libraries." ON)
   option(BUILD_TESTS "Build tests." ON)

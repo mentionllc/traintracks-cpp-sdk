@@ -1,12 +1,12 @@
 #!/bin/bash
 # ==++==
 #
-# Copyright (c) Microsoft Corporation. All rights reserved. 
+# Copyright (c) Microsoft Corporation. All rights reserved.
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
 # You may obtain a copy of the License at
 # http://www.apache.org/licenses/LICENSE-2.0
-# 
+#
 # Unless required by applicable law or agreed to in writing, software
 # distributed under the License is distributed on an "AS IS" BASIS,
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
@@ -42,11 +42,11 @@ DO_CPPRESTSDK=1
 function usage {
     echo "Usage: $0 [--skip-boost] [--skip-openssl] [--skip-libiconv] [--skip-cpprestsdk] [-h] [--ndk <android-ndk>]"
     echo ""
-    echo "    --skip-boost          Skip fetching and compiling boost"
-    echo "    --skip-openssl        Skip fetching and compiling openssl"
-    echo "    --skip-libiconv       Skip fetching and compiling libiconv"
+    echo "    --skip-boost	    Skip fetching and compiling boost"
+    echo "    --skip-openssl	    Skip fetching and compiling openssl"
+    echo "    --skip-libiconv	    Skip fetching and compiling libiconv"
     echo "    --skip-cpprestsdk     Skip compiling cpprestsdk"
-    echo "    -h,--help,-?          Display this information"
+    echo "    -h,--help,-?	    Display this information"
     echo "    --ndk <android-ndk>   If specified, overrides the ANDROID_NDK environment variable"
 }
 
@@ -233,7 +233,7 @@ then
 	    -DANDROID_TOOLCHAIN_NAME=arm-linux-androideabi-clang3.4 \
 	    -DANDROID_STL=none \
 	    -DANDROID_STL_FORCE_FEATURES=ON \
-            -DANDROID_NATIVE_API_LEVEL=android-9 \
+	    -DANDROID_NATIVE_API_LEVEL=android-9 \
 	    -DANDROID_GOLD_LINKER=OFF \
 	    -DCMAKE_BUILD_TYPE=Debug \
 	    -DANDROID_NDK="${ANDROID_NDK}"
@@ -265,7 +265,7 @@ then
 	    -DANDROID_TOOLCHAIN_NAME=x86-clang3.4 \
 	    -DANDROID_STL=none \
 	    -DANDROID_STL_FORCE_FEATURES=ON \
-            -DANDROID_NATIVE_API_LEVEL=android-9 \
+	    -DANDROID_NATIVE_API_LEVEL=android-9 \
 	    -DANDROID_GOLD_LINKER=OFF \
 	    -DCMAKE_BUILD_TYPE=Debug \
 	    -DANDROID_NDK="${ANDROID_NDK}"
